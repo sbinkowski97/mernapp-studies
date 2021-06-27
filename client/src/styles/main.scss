@@ -1,0 +1,108 @@
+@import "https://fonts.googleapis.com/css2?family=Spartan:wght@400;500;700&display=swap";
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+body {
+	font-family: "Spartan", sans-serif;
+}
+.container {
+	position: relative;
+	width: 100%;
+	min-height: 100vh;
+	background-color: #fff;
+	overflow: hidden;
+	&:before {
+		content: "";
+		position: absolute;
+		width: 2000px;
+		height: 2000px;
+		border-radius: 50%;
+		background: #07afff;
+		top: 50%;
+		right: 48%;
+		transform: translateY(-50%);
+	}
+}
+.forms-container {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+}
+.signin-signup {
+	position: absolute;
+	top: 50%;
+	left: 75%;
+	transform: translate(-50%, -50%);
+	width: 50%;
+}
+form {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	padding: 0 5rem;
+	overflow: hidden;
+}
+.title {
+	font-size: 2.2rem;
+	color: #444;
+	margin-bottom: 10px;
+}
+.input-field {
+	max-width: 380px;
+	width: 100%;
+	height: 55px;
+	background-color: #f0f0f0;
+	margin: 10px 0;
+	border-radius: 100px;
+	display: grid;
+	grid-template-columns: 15% 85%;
+	padding: 0 0.4rem;
+	i {
+		text-align: center;
+		line-height: 55px;
+		color: #acacac;
+		font-size: 1.1rem;
+	}
+	input {
+		background: none;
+		outline: none;
+		border: none;
+		line-height: 1;
+		font-weight: 700;
+		font-size: 1.1rem;
+		color: #333;
+		&::placeholder {
+			color: #aaa;
+			font-weight: 500;
+		}
+	}
+}
+.btn {
+	width: 150px;
+	height: 49px;
+	border-radius: 49px;
+	border: none;
+	outline: none;
+	cursor: pointer;
+	background-color: #009ffd;
+	color: #f0f0f0;
+	text-transform: uppercase;
+	font-weight: 700;
+	margin: 10px 0;
+	transition: 0.5s;
+	&:hover {
+		background-color: #2d3047;
+	}
+}
+img {
+	position: absolute;
+	top: 50%;
+	left: 25%;
+	transform: translate(-50%, -50%);
+	width: 20%;
+}
